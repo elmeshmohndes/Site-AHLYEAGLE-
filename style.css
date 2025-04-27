@@ -17,26 +17,20 @@ header {
     color: white;
     text-align: center;
     padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 header h1 {
     font-size: 3em;
-    margin-bottom: 10px;
 }
 
 header p {
     font-size: 1.5em;
-    margin-bottom: 0;
 }
 
 .content {
     padding: 40px;
     max-width: 900px;
     margin: 0 auto;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .section {
@@ -61,7 +55,6 @@ header p {
     padding: 30px;
     margin-top: 30px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .cta h3 {
@@ -76,7 +69,9 @@ header p {
     color: white;
     text-decoration: none;
     border-radius: 5px;
-    transition: background-color 0.3s ease;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: inline-block;
 }
 
 .cta-button:hover {
@@ -84,36 +79,35 @@ header p {
 }
 
 footer {
-    padding: 20px;
     text-align: center;
+    padding: 10px;
     background-color: #333;
     color: white;
-    margin-top: 40px;
 }
 
 footer a {
-    color: white;
+    color: #e30613;
     text-decoration: none;
-    margin: 0 15px;
-    font-size: 1.1em;
-    transition: text-decoration 0.3s ease;
 }
 
 footer a:hover {
     text-decoration: underline;
 }
 
-.social-link {
-    color: white;
-    text-decoration: none;
-    margin: 0 10px;
-    font-size: 1.1em;
-}
-
-.social-link:hover {
-    text-decoration: underline;
-}
-
-.social-link i {
-    margin-left: 5px;
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+    header p {
+        font-size: 1.2em;
+    }
+    .content {
+        padding: 20px;
+    }
+    .section h2 {
+        font-size: 1.5em;
+    }
+    .cta h3 {
+        font-size: 1.5em;
+    }
 }
